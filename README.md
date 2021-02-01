@@ -1,12 +1,20 @@
-# netScanner
+## netScanner
 
 Welocome to netScanner!
 NetScanner is a network address discovering
 tool.
 
-Runs with 🡆 sudo python netScanner.py 
+Runs with 
 ---------
+```ruby
+ git clone https://github.com/apantzar/netScanner.git
+ cd netScanner
+ sudo python netScanner.py
 
-Bugs / Contact 🡆 anastasiospantz@gmail.com
+```
+
+Bugs / Contact
 -------------
+Feel free to mail me with any problem, bug or suggestions :
+anastasiospantz@gmail.com
 
