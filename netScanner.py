@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import scapy.all as scapy
+
 import subprocess
 
 
@@ -37,6 +37,7 @@ Y8P   Y8 88bdPPP   '88p      8888888P  d888888 8b   `Y' Y8P   Y8 Y8P   Y8 88bdPP
 
 print(color.BLUE + "[*] Installing/Updating scapy.." + color.DEFAULT)
 subprocess.call("apt install scapy", shell=True);
+import scapy.all as scapy
 print("")
 print(color.BLUE + "[*] Running 'route -n' for you.." + color.DEFAULT)
 subprocess.call("sudo route -n", shell=True);
