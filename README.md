@@ -10,7 +10,7 @@ Runs with
  apt install scapy
  sudo git clone https://github.com/apantzar/netScanner.git
  cd netScanner
- sudo python netScanner.py
+ sudo python3 netScanner.py
 
 ```
 
