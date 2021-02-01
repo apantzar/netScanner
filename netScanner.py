@@ -41,4 +41,4 @@ print("")
 print(color.BLUE + "[*] Running 'route -n' for you.." + color.DEFAULT)
 subprocess.call("sudo route -n", shell=True);
 print("")
-scanner(raw_input(color.BLUE + "Give ip or range to scan: " + color.DEFAULT))
+scanner(input(color.BLUE + "Give ip or range to scan: " + color.DEFAULT))
