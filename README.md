@@ -7,7 +7,8 @@ tool.
 Runs with 
 ---------
 ```ruby
- git clone https://github.com/apantzar/netScanner.git
+ sudo apt install scapy
+ sudo git clone https://github.com/apantzar/netScanner.git
  cd netScanner
  sudo python netScanner.py
 
