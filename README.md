@@ -1,6 +1,6 @@
 ## netScanner
 
-Welocome to netScanner!
+Welocome to netScanner (Linux edition)!
 NetScanner is a network address discovering
 tool.
 
