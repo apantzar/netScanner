@@ -25,6 +25,12 @@ def scanner(ip):
 
         print("-------------------------------------------------------")
 
+def updater():
+    subprocess.call("sudo apt update", shell=True);
+    subprocess.call("sudo apt install python3-pip", shell=True);
+    subprocess.call("sudo apt install scapy", shell=True);
+    subprocess.call("sudo pip install --pre scapy", shell=True);
+
 
 ####################################MAIN########################################
 
@@ -36,10 +42,7 @@ Y8P   Y8 88bdPPP   '88p      8888888P  d888888 8b   `Y' Y8P   Y8 Y8P   Y8 88bdPP
 """ + color.DEFAULT)
 
 print(color.BLUE + "[*] Installing/Updating scapy.." + color.DEFAULT)
-subprocess.call("sudo apt update", shell=True);
-subprocess.call("sudo apt install python3-pip", shell=True);
-subprocess.call("sudo apt install scapy", shell=True);
-subprocess.call("sudo pip install --pre scapy", shell=True);
+updater();
 import scapy.all as scapy
 print("")
 print(color.BLUE + "[*] Running 'route -n' for you.." + color.DEFAULT)
