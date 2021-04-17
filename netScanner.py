@@ -18,13 +18,14 @@ def scanner(ip):
 
     ########################Sends packet & Recieves response############################################
     answer = scapy.srp(arpRequestBroadcastComb, timeout=1, verbose=False)[0]
-    print("IP\t\t\tMAC\n-------------------------------------------------------")
+    print("\n<==============================[ Results ]==============================>\n")
+    print("   IP\t\t\t\tMAC\n+-------------------------------------------------------+")
     for element in answer:
-        print(color.GREEN + "IP: " + color.DEFAULT + element[1].psrc + "\t\t" + color.RED + "MAC: " + color.DEFAULT +
+        print(color.GREEN + "  IP: " + color.DEFAULT + element[1].psrc + "  " + color.RED + "MAC: " + color.DEFAULT +
               element[1].hwsrc)
 
-        print("-------------------------------------------------------")
-
+        print("+-------------------------------------------------------+")
+    print("\n<=======================================================================>\n")
 def updater():
     subprocess.call("sudo apt update", shell=True);
     subprocess.call("sudo apt install python3-pip", shell=True);
@@ -49,3 +50,5 @@ print(color.BLUE + "[*] Running 'route -n' for you.." + color.DEFAULT)
 subprocess.call("sudo route -n", shell=True);
 print("")
 scanner(input(color.BLUE + "Give ip or range to scan: " + color.DEFAULT))
+print("")
+
